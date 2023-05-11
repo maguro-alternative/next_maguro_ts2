@@ -1,0 +1,196 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+pre {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h1 {
+	font-size: 30px;
+    padding: auto;
+    line-height: 75px;
+    border-bottom: 1px solid black;
+}
+
+h2 {
+	font-size: 30px;
+    padding: auto;
+    line-height: 75px;
+}
+
+.H1{
+	margin-left: 0px;
+}
+
+.H2{
+	margin-left: 5px;
+}
+
+.H3{
+	margin-left: 10px;
+}
+
+#canvasOverlay {
+	top: 0;
+	left: 0;
+	min-height: 100%;
+	/*min-width:100vw;
+	min-height:100vh;*/
+	overflow-x: hidden;
+	overflow-y: hidden;
+	position: fixed;
+	/*position: fixed;*/
+	mix-blend-mode: hard-light;
+	z-index: 0;
+}
+
+
+#bg {
+	z-index: -2;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	min-height: 100vh;
+	padding-top: 0%;
+	background: linear-gradient(to bottom,
+	hsl(145, 33%, 48%),
+	hsl(152, 21%, 54%),
+	hsl(175, 20%, 53%));
+	animation: AnimationName 10s ease infinite;
+}
+
+
+
+.disgetbot{
+	position: relative;
+	margin-left: 19%;
+	margin-top: 10px;
+	height: 550px; 
+	width: 900px;
+}
+
+/*記事で使うテキストボックス*/
+.wrapper {
+	display: flex;
+	/*max-width: 940px;*/
+	justify-content: space-around;
+	position: relative;
+	flex-wrap: nowrap;
+}
+
+.sidebar{
+	position: fixed;
+	flex-basis: 20%;
+	margin-left: 80%;
+	margin-top: 10%;
+	min-width: 10%;
+}
+
+.textback {
+	background: #fff;
+	width: 90%;
+	/*height: 90%;*/
+	padding: 20px;
+	border: 5px solid #999;
+	border-radius: 10px;
+	line-height:1.8rem;
+}
+
+ul li:hover{
+	background-color: #FFF2CC;
+}
+
+@media screen and (min-width: 1281px) {
+	.textback{
+		min-width: 350px;
+	}
+}
+
+@media screen and (min-width: 426px) and (max-width: 1280px)  {
+	body{
+		font-size: 1.1rem;
+	}
+	/*iphone*/
+	.container {
+		/*max-width: 480px;*/
+		margin: 0% 5% 0% 5%;
+	}
+	.textback {
+		background: #fff;
+		max-width: 55%;
+		padding: 1%;
+		border: 5px solid #999;
+		border-radius: 10px;
+		line-height:1.8rem;
+	}
+	.wrapper {
+		display: flex;
+		min-width: 320px;
+		/*justify-content: space-around;*/
+		position: relative;
+		/*flex-wrap: nowrap;*/
+	}
+	.sidebar{
+		display: none;
+		flex-basis: 30%;
+		margin-left: 10px;
+		min-width: 10%;
+	}
+	.disgetbot{
+		position: relative;
+		margin-left: 15%;
+		width: 500px;
+		height: 500px;
+	}
+}
+@media screen and (min-width: 320px) and (max-width: 425px)  {
+	body{
+		font-size: 1.1rem;
+	}
+	.textback {
+		background: #fff;
+		min-width: 90%;
+		padding: 20px;
+		border: 5px solid #999;
+		border-radius: 10px;
+		line-height:1.8rem;
+	}
+	.wrapper {
+		display: flex;
+		min-width: 320px;
+		/*justify-content: space-around;*/
+		position: relative;
+		/*flex-wrap: nowrap;*/
+	}
+
+	.sidebar{
+		display: none;
+		flex-basis: 30%;
+		margin-left: 10px;
+		min-width: 10%;
+	}
+	.disgetbot{
+		position: relative;
+		margin-left: 9%;
+		width: 300px;
+		height: 500px;
+	}
+	pre {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    h1{
+        font-size: 20px;
+        line-height: 50px;
+    }
+}
