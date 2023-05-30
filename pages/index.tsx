@@ -161,6 +161,11 @@ export default function Home({ blog,totalCount,category,tag }: Props) {
               </a>
             </div>
 
+            <h5>Wantedly</h5>
+            <a href="https://www.wantedly.com/id/haruki_sasaki_ad">
+              <img src="https://www.wantedly.com/favicon.ico" width="50" height="50"></img>
+            </a>
+
             <h5>Use Games</h5>
             <div className='sm:block md:flex lg:flex'>
               {/*Nintendo Switch*/ }
@@ -228,6 +233,15 @@ export default function Home({ blog,totalCount,category,tag }: Props) {
             </div>
 
           </div>
+        </div>
+        <h1>制作物</h1>
+        Discordの多機能Bot
+        <a href='https://github.com/maguro-alternative/discordfast'>
+          <img src='/img/discordtoline.png'></img>
+        </a>
+        Joy-Conを使用した骨伝導演奏
+        <div className="youtube">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/vM_LJggO4IY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
         </div>
       </div>
       <h1 className="text-1 px-5 pt-10 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 relative z-2 container mx-auto text-white xl:px-10 xl:pt-20 grid grid-cols-1">
