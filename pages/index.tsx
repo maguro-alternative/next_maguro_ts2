@@ -162,9 +162,15 @@ export default function Home({ blog,totalCount,category,tag }: Props) {
             </div>
 
             <h5>Wantedly</h5>
-            <a href="https://www.wantedly.com/id/haruki_sasaki_ad">
-              <img src="https://www.wantedly.com/favicon.ico" width="50" height="50"></img>
-            </a>
+            <div className='sm:block md:flex lg:flex'>
+              <a
+                href="https://www.wantedly.com/id/haruki_sasaki_ad"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="https://www.wantedly.com/favicon.ico" width="50" height="50"></img>
+              </a>
+            </div>
 
             <h5>Use Games</h5>
             <div className='sm:block md:flex lg:flex'>
@@ -191,6 +197,7 @@ export default function Home({ blog,totalCount,category,tag }: Props) {
             </div>
 
             <h5>Skill</h5>
+            <h4>Lang</h4>
             <div className='sm:block md:flex lg:flex '>
               {/*python*/}
               <img 
@@ -208,6 +215,17 @@ export default function Home({ blog,totalCount,category,tag }: Props) {
               />
               <img 
                 className='sm:float-none md:float-left lg:float-left md:w-1/12 md:h-3/6 xl:w-2/12'
+                src="https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white" 
+              />
+              <img 
+                className='sm:float-none md:float-left lg:float-left md:w-1/12 md:h-3/6 xl:w-2/12'
+                src="https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white" 
+              />
+            </div>
+            <h4>Tool</h4>
+            <div className='sm:block md:flex lg:flex '>
+              <img 
+                className='sm:float-none md:float-left lg:float-left md:w-1/12 md:h-3/6 xl:w-2/12'
                 src="https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white" 
               />
               <img 
@@ -218,6 +236,9 @@ export default function Home({ blog,totalCount,category,tag }: Props) {
                 className='sm:float-none md:float-left lg:float-left md:w-1/12 md:h-3/6 xl:w-2/12'
                 src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" 
               />
+            </div>
+            <h4>framework</h4>
+            <div className='sm:block md:flex lg:flex '>
               <img 
                 className='sm:float-none md:float-left lg:float-left md:w-1/12 md:h-3/6 xl:w-2/12'
                 src="https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white" 
@@ -228,7 +249,15 @@ export default function Home({ blog,totalCount,category,tag }: Props) {
               />
               <img 
                 className='sm:float-none md:float-left lg:float-left md:w-1/12 md:h-3/6 xl:w-2/12'
+                src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" 
+              />
+              <img 
+                className='sm:float-none md:float-left lg:float-left md:w-1/12 md:h-3/6 xl:w-2/12'
                 src="https://img.shields.io/badge/fastapi-109989?style=for-the-badge&logo=FASTAPI&logoColor=white" 
+              />
+              <img 
+                className='sm:float-none md:float-left lg:float-left md:w-1/12 md:h-3/6 xl:w-2/12'
+                src="https://img.shields.io/badge/laravel-%23FF2D20.svg?style=for-the-badge&logo=laravel&logoColor=white" 
               />
             </div>
 

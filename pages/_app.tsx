@@ -14,7 +14,12 @@ function MyApp({ Component, pageProps }: AppProps) {
         <canvas id="canvasWave"></canvas>
         <canvas id="canvasOverlay"></canvas>
         <Component {...pageProps} />
-        <iframe title="discord_5second" className="disgetbot max-w-4xl px-7 py-10 mx-auto" src="https://discord.com/widget?id=838937935822585928&theme=dark/" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        <iframe
+          title="discord_5second"
+          className="disgetbot max-w-4xl px-7 py-10 mx-auto"
+          src="https://discord.com/widget?id=838937935822585928&theme=dark/"
+          sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+        ></iframe>
       </div>
       <footer>
         <script src="/lib/perlin.js"></script>
