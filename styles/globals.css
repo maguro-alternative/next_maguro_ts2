@@ -6,6 +6,10 @@ pre {
     -webkit-overflow-scrolling: touch;
 }
 
+a{
+	color: blue;
+}
+
 p{
     padding-top: 20px;
     padding-bottom: 20px;
